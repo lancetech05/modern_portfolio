@@ -118,13 +118,12 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
-  
-  
+
   img {
-    width: 100%; 
+    width: 100%;
     border: 3px #fff solid;
 
-    &:hover{
+    &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
@@ -134,17 +133,17 @@ main {
 
 //Contact Page
 
-.boxes{
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
 
-  div{
+  div {
     font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem ;
+    padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
@@ -152,35 +151,30 @@ main {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: setTextColor($secondary-color);
-      span{
+      span {
         color: setTextColor($secondary-color);
       }
-      
     }
-    
   }
-  
 }
-
-
 
 //Button Styles
 .btn {
-display: block;
-padding: 0.5rem 1rem;
-border: 0;
-margin-bottom: 0.3rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
 
-&:hover{
-  background: $secondary-color;
-  color: setTextColor($secondary-color);
-}
+  &:hover {
+    background: $secondary-color;
+    color: setTextColor($secondary-color);
+  }
 }
 
-.btn-dark{
-@extend .btn;
-background: darken($primary-color, 50);
-color: #fff;
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
 }
 
 .btn-light {
@@ -189,11 +183,10 @@ color: #fff;
   color: #000;
 }
 
-
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: darken($primary-color, 3);
   color: setTextColor($primary-color);
   height: 60px;
 }
