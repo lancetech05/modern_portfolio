@@ -282,6 +282,5 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   main#contact {
-    align-items: center;
-    text-align: center;
-    overflow: hidden; } }
+    align-content: center;
+    align-items: center; } }
